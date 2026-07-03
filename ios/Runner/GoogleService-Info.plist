@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  ⚠️  PLACEHOLDER FILE — Replace with real GoogleService-Info.plist from Firebase Console
+  
+  How to get the real file:
+  1. Go to https://console.firebase.google.com
+  2. Create a project (or use existing)
+  3. Add iOS app with Bundle ID: com.antifinance.app
+  4. Download GoogleService-Info.plist
+  5. Replace this file with the downloaded one
+  6. In Xcode: drag the file into Runner/ folder, check "Copy items if needed"
+
+  Until you replace this, Firebase features (push notifications) won't work
+  but the app WILL launch thanks to the try/catch in main.dart.
+-->
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>PLACEHOLDER</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.PLACEHOLDER</string>
+	<key>API_KEY</key>
+	<string>PLACEHOLDER</string>
+	<key>GCM_SENDER_ID</key>
+	<string>000000000000</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.antifinance.app</string>
+	<key>PROJECT_ID</key>
+	<string>anti-finance-placeholder</string>
+	<key>STORAGE_BUCKET</key>
+	<string>anti-finance-placeholder.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:000000000000:ios:0000000000000000</string>
+</dict>
+</plist>
