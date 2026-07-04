@@ -16,15 +16,15 @@ final class AppRouterProvider
     extends $FunctionalProvider<GoRouter, GoRouter, GoRouter>
     with $Provider<GoRouter> {
   AppRouterProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'appRouterProvider',
-        isAutoDispose: false,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'appRouterProvider',
+          isAutoDispose: false,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$appRouterHash();
@@ -48,4 +48,4 @@ final class AppRouterProvider
   }
 }
 
-String _$appRouterHash() => r'e0bcce3f0b1e4493b539a1dc8c4838051b6a9d2f';
+String _$appRouterHash() => r'e3cbb0159078f5d014749122f01dded547487e65';

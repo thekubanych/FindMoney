@@ -15,15 +15,15 @@ final dioClientProvider = DioClientProvider._();
 final class DioClientProvider extends $FunctionalProvider<Dio, Dio, Dio>
     with $Provider<Dio> {
   DioClientProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'dioClientProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'dioClientProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$dioClientHash();
@@ -52,24 +52,20 @@ String _$dioClientHash() => r'1bc94c3875be902d0b3dacf149dc1fff4c507827';
 @ProviderFor(secureStorage)
 final secureStorageProvider = SecureStorageProvider._();
 
-final class SecureStorageProvider
-    extends
-        $FunctionalProvider<
-          FlutterSecureStorage,
-          FlutterSecureStorage,
-          FlutterSecureStorage
-        >
-    with $Provider<FlutterSecureStorage> {
+final class SecureStorageProvider extends $FunctionalProvider<
+    FlutterSecureStorage,
+    FlutterSecureStorage,
+    FlutterSecureStorage> with $Provider<FlutterSecureStorage> {
   SecureStorageProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'secureStorageProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'secureStorageProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$secureStorageHash();
@@ -77,8 +73,8 @@ final class SecureStorageProvider
   @$internal
   @override
   $ProviderElement<FlutterSecureStorage> $createElement(
-    $ProviderPointer pointer,
-  ) => $ProviderElement(pointer);
+          $ProviderPointer pointer) =>
+      $ProviderElement(pointer);
 
   @override
   FlutterSecureStorage create(Ref ref) {

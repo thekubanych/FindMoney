@@ -51,8 +51,9 @@ GoRouter appRouter(Ref ref) {
         return path == '/splash' ? null : '/splash';
       }
 
-      // Not authed + protected route → login
-      if (authState.status == AuthStatus.unauthenticated && isProtected) {
+      // Not authed + splash or protected route → login
+      if (authState.status == AuthStatus.unauthenticated &&
+          (isProtected || path == '/splash')) {
         return '/login';
       }
 

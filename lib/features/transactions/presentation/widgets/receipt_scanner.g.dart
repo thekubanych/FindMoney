@@ -15,15 +15,15 @@ final receiptOcrProvider = ReceiptOcrNotifierProvider._();
 final class ReceiptOcrNotifierProvider
     extends $NotifierProvider<ReceiptOcrNotifier, AsyncValue<OcrResult?>> {
   ReceiptOcrNotifierProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'receiptOcrProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'receiptOcrProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$receiptOcrNotifierHash();
@@ -51,14 +51,11 @@ abstract class _$ReceiptOcrNotifier extends $Notifier<AsyncValue<OcrResult?>> {
   WhenComplete runBuild() {
     final ref =
         this.ref as $Ref<AsyncValue<OcrResult?>, AsyncValue<OcrResult?>>;
-    final element =
-        ref.element
-            as $ClassProviderElement<
-              AnyNotifier<AsyncValue<OcrResult?>, AsyncValue<OcrResult?>>,
-              AsyncValue<OcrResult?>,
-              Object?,
-              Object?
-            >;
+    final element = ref.element as $ClassProviderElement<
+        AnyNotifier<AsyncValue<OcrResult?>, AsyncValue<OcrResult?>>,
+        AsyncValue<OcrResult?>,
+        Object?,
+        Object?>;
     return element.handleCreate(ref, build);
   }
 }

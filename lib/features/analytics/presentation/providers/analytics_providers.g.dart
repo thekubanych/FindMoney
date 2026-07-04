@@ -12,24 +12,20 @@ part of 'analytics_providers.dart';
 @ProviderFor(analyticsDataSource)
 final analyticsDataSourceProvider = AnalyticsDataSourceProvider._();
 
-final class AnalyticsDataSourceProvider
-    extends
-        $FunctionalProvider<
-          AnalyticsDataSource,
-          AnalyticsDataSource,
-          AnalyticsDataSource
-        >
-    with $Provider<AnalyticsDataSource> {
+final class AnalyticsDataSourceProvider extends $FunctionalProvider<
+    AnalyticsDataSource,
+    AnalyticsDataSource,
+    AnalyticsDataSource> with $Provider<AnalyticsDataSource> {
   AnalyticsDataSourceProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'analyticsDataSourceProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'analyticsDataSourceProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$analyticsDataSourceHash();
@@ -37,8 +33,8 @@ final class AnalyticsDataSourceProvider
   @$internal
   @override
   $ProviderElement<AnalyticsDataSource> $createElement(
-    $ProviderPointer pointer,
-  ) => $ProviderElement(pointer);
+          $ProviderPointer pointer) =>
+      $ProviderElement(pointer);
 
   @override
   AnalyticsDataSource create(Ref ref) {
@@ -63,15 +59,15 @@ final analyticsProvider = AnalyticsNotifierProvider._();
 final class AnalyticsNotifierProvider
     extends $AsyncNotifierProvider<AnalyticsNotifier, AnalyticsData> {
   AnalyticsNotifierProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'analyticsProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'analyticsProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$analyticsNotifierHash();
@@ -89,14 +85,11 @@ abstract class _$AnalyticsNotifier extends $AsyncNotifier<AnalyticsData> {
   @override
   WhenComplete runBuild() {
     final ref = this.ref as $Ref<AsyncValue<AnalyticsData>, AnalyticsData>;
-    final element =
-        ref.element
-            as $ClassProviderElement<
-              AnyNotifier<AsyncValue<AnalyticsData>, AnalyticsData>,
-              AsyncValue<AnalyticsData>,
-              Object?,
-              Object?
-            >;
+    final element = ref.element as $ClassProviderElement<
+        AnyNotifier<AsyncValue<AnalyticsData>, AnalyticsData>,
+        AsyncValue<AnalyticsData>,
+        Object?,
+        Object?>;
     return element.handleCreate(ref, build);
   }
 }
@@ -107,15 +100,15 @@ final heatmapRangeProvider = HeatmapRangeNotifierProvider._();
 final class HeatmapRangeNotifierProvider
     extends $NotifierProvider<HeatmapRangeNotifier, int> {
   HeatmapRangeNotifierProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'heatmapRangeProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'heatmapRangeProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$heatmapRangeNotifierHash();
@@ -142,14 +135,8 @@ abstract class _$HeatmapRangeNotifier extends $Notifier<int> {
   @override
   WhenComplete runBuild() {
     final ref = this.ref as $Ref<int, int>;
-    final element =
-        ref.element
-            as $ClassProviderElement<
-              AnyNotifier<int, int>,
-              int,
-              Object?,
-              Object?
-            >;
+    final element = ref.element
+        as $ClassProviderElement<AnyNotifier<int, int>, int, Object?, Object?>;
     return element.handleCreate(ref, build);
   }
 }

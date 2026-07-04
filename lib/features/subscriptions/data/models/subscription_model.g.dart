@@ -7,24 +7,24 @@ part of 'subscription_model.dart';
 // **************************************************************************
 
 _SubscriptionStatusModel _$SubscriptionStatusModelFromJson(
-  Map<String, dynamic> json,
-) => _SubscriptionStatusModel(
-  planType: json['plan_type'] as String,
-  status: json['status'] as String,
-  expiresAt: json['expires_at'] as String?,
-  store: json['store'] as String?,
-  willRenew: json['will_renew'] as bool?,
-);
+        Map<String, dynamic> json) =>
+    _SubscriptionStatusModel(
+      planType: json['plan_type'] as String,
+      status: json['status'] as String,
+      expiresAt: json['expires_at'] as String?,
+      store: json['store'] as String?,
+      willRenew: json['will_renew'] as bool?,
+    );
 
 Map<String, dynamic> _$SubscriptionStatusModelToJson(
-  _SubscriptionStatusModel instance,
-) => <String, dynamic>{
-  'plan_type': instance.planType,
-  'status': instance.status,
-  'expires_at': instance.expiresAt,
-  'store': instance.store,
-  'will_renew': instance.willRenew,
-};
+        _SubscriptionStatusModel instance) =>
+    <String, dynamic>{
+      'plan_type': instance.planType,
+      'status': instance.status,
+      'expires_at': instance.expiresAt,
+      'store': instance.store,
+      'will_renew': instance.willRenew,
+    };
 
 _VerifyPurchaseDto _$VerifyPurchaseDtoFromJson(Map<String, dynamic> json) =>
     _VerifyPurchaseDto(

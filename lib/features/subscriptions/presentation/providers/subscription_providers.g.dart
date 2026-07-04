@@ -12,24 +12,20 @@ part of 'subscription_providers.dart';
 @ProviderFor(subscriptionDataSource)
 final subscriptionDataSourceProvider = SubscriptionDataSourceProvider._();
 
-final class SubscriptionDataSourceProvider
-    extends
-        $FunctionalProvider<
-          SubscriptionDataSource,
-          SubscriptionDataSource,
-          SubscriptionDataSource
-        >
-    with $Provider<SubscriptionDataSource> {
+final class SubscriptionDataSourceProvider extends $FunctionalProvider<
+    SubscriptionDataSource,
+    SubscriptionDataSource,
+    SubscriptionDataSource> with $Provider<SubscriptionDataSource> {
   SubscriptionDataSourceProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'subscriptionDataSourceProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'subscriptionDataSourceProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$subscriptionDataSourceHash();
@@ -37,8 +33,8 @@ final class SubscriptionDataSourceProvider
   @$internal
   @override
   $ProviderElement<SubscriptionDataSource> $createElement(
-    $ProviderPointer pointer,
-  ) => $ProviderElement(pointer);
+          $ProviderPointer pointer) =>
+      $ProviderElement(pointer);
 
   @override
   SubscriptionDataSource create(Ref ref) {
@@ -63,15 +59,15 @@ final subscriptionProvider = SubscriptionNotifierProvider._();
 final class SubscriptionNotifierProvider
     extends $AsyncNotifierProvider<SubscriptionNotifier, SubscriptionStatus> {
   SubscriptionNotifierProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'subscriptionProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'subscriptionProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$subscriptionNotifierHash();
@@ -92,14 +88,11 @@ abstract class _$SubscriptionNotifier
   WhenComplete runBuild() {
     final ref =
         this.ref as $Ref<AsyncValue<SubscriptionStatus>, SubscriptionStatus>;
-    final element =
-        ref.element
-            as $ClassProviderElement<
-              AnyNotifier<AsyncValue<SubscriptionStatus>, SubscriptionStatus>,
-              AsyncValue<SubscriptionStatus>,
-              Object?,
-              Object?
-            >;
+    final element = ref.element as $ClassProviderElement<
+        AnyNotifier<AsyncValue<SubscriptionStatus>, SubscriptionStatus>,
+        AsyncValue<SubscriptionStatus>,
+        Object?,
+        Object?>;
     return element.handleCreate(ref, build);
   }
 }

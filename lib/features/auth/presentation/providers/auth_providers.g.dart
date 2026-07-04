@@ -12,24 +12,20 @@ part of 'auth_providers.dart';
 @ProviderFor(authRemoteDataSource)
 final authRemoteDataSourceProvider = AuthRemoteDataSourceProvider._();
 
-final class AuthRemoteDataSourceProvider
-    extends
-        $FunctionalProvider<
-          AuthRemoteDataSource,
-          AuthRemoteDataSource,
-          AuthRemoteDataSource
-        >
-    with $Provider<AuthRemoteDataSource> {
+final class AuthRemoteDataSourceProvider extends $FunctionalProvider<
+    AuthRemoteDataSource,
+    AuthRemoteDataSource,
+    AuthRemoteDataSource> with $Provider<AuthRemoteDataSource> {
   AuthRemoteDataSourceProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'authRemoteDataSourceProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'authRemoteDataSourceProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$authRemoteDataSourceHash();
@@ -37,8 +33,8 @@ final class AuthRemoteDataSourceProvider
   @$internal
   @override
   $ProviderElement<AuthRemoteDataSource> $createElement(
-    $ProviderPointer pointer,
-  ) => $ProviderElement(pointer);
+          $ProviderPointer pointer) =>
+      $ProviderElement(pointer);
 
   @override
   AuthRemoteDataSource create(Ref ref) {
@@ -64,15 +60,15 @@ final class AuthRepositoryProvider
     extends $FunctionalProvider<AuthRepository, AuthRepository, AuthRepository>
     with $Provider<AuthRepository> {
   AuthRepositoryProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'authRepositoryProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'authRepositoryProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$authRepositoryHash();
@@ -105,15 +101,15 @@ final class LoginUseCaseProvider
     extends $FunctionalProvider<LoginUseCase, LoginUseCase, LoginUseCase>
     with $Provider<LoginUseCase> {
   LoginUseCaseProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'loginUseCaseProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'loginUseCaseProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$loginUseCaseHash();
@@ -142,20 +138,18 @@ String _$loginUseCaseHash() => r'5a95b111ff086652f0c947b88bcfe26ea7ce95be';
 @ProviderFor(registerUseCase)
 final registerUseCaseProvider = RegisterUseCaseProvider._();
 
-final class RegisterUseCaseProvider
-    extends
-        $FunctionalProvider<RegisterUseCase, RegisterUseCase, RegisterUseCase>
-    with $Provider<RegisterUseCase> {
+final class RegisterUseCaseProvider extends $FunctionalProvider<RegisterUseCase,
+    RegisterUseCase, RegisterUseCase> with $Provider<RegisterUseCase> {
   RegisterUseCaseProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'registerUseCaseProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'registerUseCaseProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$registerUseCaseHash();
@@ -184,24 +178,20 @@ String _$registerUseCaseHash() => r'18669430c22e1c7844c19dd3dcbe2285a2250a73';
 @ProviderFor(loginWithGoogleUseCase)
 final loginWithGoogleUseCaseProvider = LoginWithGoogleUseCaseProvider._();
 
-final class LoginWithGoogleUseCaseProvider
-    extends
-        $FunctionalProvider<
-          LoginWithGoogleUseCase,
-          LoginWithGoogleUseCase,
-          LoginWithGoogleUseCase
-        >
-    with $Provider<LoginWithGoogleUseCase> {
+final class LoginWithGoogleUseCaseProvider extends $FunctionalProvider<
+    LoginWithGoogleUseCase,
+    LoginWithGoogleUseCase,
+    LoginWithGoogleUseCase> with $Provider<LoginWithGoogleUseCase> {
   LoginWithGoogleUseCaseProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'loginWithGoogleUseCaseProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'loginWithGoogleUseCaseProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$loginWithGoogleUseCaseHash();
@@ -209,8 +199,8 @@ final class LoginWithGoogleUseCaseProvider
   @$internal
   @override
   $ProviderElement<LoginWithGoogleUseCase> $createElement(
-    $ProviderPointer pointer,
-  ) => $ProviderElement(pointer);
+          $ProviderPointer pointer) =>
+      $ProviderElement(pointer);
 
   @override
   LoginWithGoogleUseCase create(Ref ref) {
@@ -236,15 +226,15 @@ final class LogoutUseCaseProvider
     extends $FunctionalProvider<LogoutUseCase, LogoutUseCase, LogoutUseCase>
     with $Provider<LogoutUseCase> {
   LogoutUseCaseProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'logoutUseCaseProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'logoutUseCaseProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$logoutUseCaseHash();
@@ -273,24 +263,20 @@ String _$logoutUseCaseHash() => r'c3c6c589cbff5a2f6618cc56b1f9faae632da27a';
 @ProviderFor(restoreSessionUseCase)
 final restoreSessionUseCaseProvider = RestoreSessionUseCaseProvider._();
 
-final class RestoreSessionUseCaseProvider
-    extends
-        $FunctionalProvider<
-          RestoreSessionUseCase,
-          RestoreSessionUseCase,
-          RestoreSessionUseCase
-        >
-    with $Provider<RestoreSessionUseCase> {
+final class RestoreSessionUseCaseProvider extends $FunctionalProvider<
+    RestoreSessionUseCase,
+    RestoreSessionUseCase,
+    RestoreSessionUseCase> with $Provider<RestoreSessionUseCase> {
   RestoreSessionUseCaseProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'restoreSessionUseCaseProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'restoreSessionUseCaseProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$restoreSessionUseCaseHash();
@@ -298,8 +284,8 @@ final class RestoreSessionUseCaseProvider
   @$internal
   @override
   $ProviderElement<RestoreSessionUseCase> $createElement(
-    $ProviderPointer pointer,
-  ) => $ProviderElement(pointer);
+          $ProviderPointer pointer) =>
+      $ProviderElement(pointer);
 
   @override
   RestoreSessionUseCase create(Ref ref) {
@@ -324,15 +310,15 @@ final authProvider = AuthNotifierProvider._();
 final class AuthNotifierProvider
     extends $NotifierProvider<AuthNotifier, AuthState> {
   AuthNotifierProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'authProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'authProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$authNotifierHash();
@@ -350,7 +336,7 @@ final class AuthNotifierProvider
   }
 }
 
-String _$authNotifierHash() => r'8e015d65566b2da186a59f362117e5045234589d';
+String _$authNotifierHash() => r'f34a0775efc8bc3ed06d3dd662500098a9048b46';
 
 abstract class _$AuthNotifier extends $Notifier<AuthState> {
   AuthState build();
@@ -358,14 +344,8 @@ abstract class _$AuthNotifier extends $Notifier<AuthState> {
   @override
   WhenComplete runBuild() {
     final ref = this.ref as $Ref<AuthState, AuthState>;
-    final element =
-        ref.element
-            as $ClassProviderElement<
-              AnyNotifier<AuthState, AuthState>,
-              AuthState,
-              Object?,
-              Object?
-            >;
+    final element = ref.element as $ClassProviderElement<
+        AnyNotifier<AuthState, AuthState>, AuthState, Object?, Object?>;
     return element.handleCreate(ref, build);
   }
 }
@@ -376,15 +356,15 @@ final currentUserProvider = CurrentUserProvider._();
 final class CurrentUserProvider extends $FunctionalProvider<User?, User?, User?>
     with $Provider<User?> {
   CurrentUserProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'currentUserProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'currentUserProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$currentUserHash();

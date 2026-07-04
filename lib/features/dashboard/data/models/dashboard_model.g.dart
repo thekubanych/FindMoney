@@ -47,7 +47,10 @@ _BalancePointModel _$BalancePointModelFromJson(Map<String, dynamic> json) =>
     );
 
 Map<String, dynamic> _$BalancePointModelToJson(_BalancePointModel instance) =>
-    <String, dynamic>{'date': instance.date, 'balance': instance.balance};
+    <String, dynamic>{
+      'date': instance.date,
+      'balance': instance.balance,
+    };
 
 _SpendingPointModel _$SpendingPointModelFromJson(Map<String, dynamic> json) =>
     _SpendingPointModel(

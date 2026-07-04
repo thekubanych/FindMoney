@@ -13,24 +13,20 @@ part of 'transaction_providers.dart';
 final transactionRemoteDataSourceProvider =
     TransactionRemoteDataSourceProvider._();
 
-final class TransactionRemoteDataSourceProvider
-    extends
-        $FunctionalProvider<
-          TransactionRemoteDataSource,
-          TransactionRemoteDataSource,
-          TransactionRemoteDataSource
-        >
-    with $Provider<TransactionRemoteDataSource> {
+final class TransactionRemoteDataSourceProvider extends $FunctionalProvider<
+    TransactionRemoteDataSource,
+    TransactionRemoteDataSource,
+    TransactionRemoteDataSource> with $Provider<TransactionRemoteDataSource> {
   TransactionRemoteDataSourceProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'transactionRemoteDataSourceProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'transactionRemoteDataSourceProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$transactionRemoteDataSourceHash();
@@ -38,8 +34,8 @@ final class TransactionRemoteDataSourceProvider
   @$internal
   @override
   $ProviderElement<TransactionRemoteDataSource> $createElement(
-    $ProviderPointer pointer,
-  ) => $ProviderElement(pointer);
+          $ProviderPointer pointer) =>
+      $ProviderElement(pointer);
 
   @override
   TransactionRemoteDataSource create(Ref ref) {
@@ -61,24 +57,20 @@ String _$transactionRemoteDataSourceHash() =>
 @ProviderFor(transactionRepository)
 final transactionRepositoryProvider = TransactionRepositoryProvider._();
 
-final class TransactionRepositoryProvider
-    extends
-        $FunctionalProvider<
-          TransactionRepository,
-          TransactionRepository,
-          TransactionRepository
-        >
-    with $Provider<TransactionRepository> {
+final class TransactionRepositoryProvider extends $FunctionalProvider<
+    TransactionRepository,
+    TransactionRepository,
+    TransactionRepository> with $Provider<TransactionRepository> {
   TransactionRepositoryProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'transactionRepositoryProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'transactionRepositoryProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$transactionRepositoryHash();
@@ -86,8 +78,8 @@ final class TransactionRepositoryProvider
   @$internal
   @override
   $ProviderElement<TransactionRepository> $createElement(
-    $ProviderPointer pointer,
-  ) => $ProviderElement(pointer);
+          $ProviderPointer pointer) =>
+      $ProviderElement(pointer);
 
   @override
   TransactionRepository create(Ref ref) {
@@ -112,15 +104,15 @@ final transactionFilterProvider = TransactionFilterNotifierProvider._();
 final class TransactionFilterNotifierProvider
     extends $NotifierProvider<TransactionFilterNotifier, TransactionFilter> {
   TransactionFilterNotifierProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'transactionFilterProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'transactionFilterProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$transactionFilterNotifierHash();
@@ -148,14 +140,11 @@ abstract class _$TransactionFilterNotifier
   @override
   WhenComplete runBuild() {
     final ref = this.ref as $Ref<TransactionFilter, TransactionFilter>;
-    final element =
-        ref.element
-            as $ClassProviderElement<
-              AnyNotifier<TransactionFilter, TransactionFilter>,
-              TransactionFilter,
-              Object?,
-              Object?
-            >;
+    final element = ref.element as $ClassProviderElement<
+        AnyNotifier<TransactionFilter, TransactionFilter>,
+        TransactionFilter,
+        Object?,
+        Object?>;
     return element.handleCreate(ref, build);
   }
 }
@@ -166,15 +155,15 @@ final transactionsProvider = TransactionsNotifierProvider._();
 final class TransactionsNotifierProvider
     extends $AsyncNotifierProvider<TransactionsNotifier, List<Transaction>> {
   TransactionsNotifierProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'transactionsProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'transactionsProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$transactionsNotifierHash();
@@ -195,14 +184,11 @@ abstract class _$TransactionsNotifier
   WhenComplete runBuild() {
     final ref =
         this.ref as $Ref<AsyncValue<List<Transaction>>, List<Transaction>>;
-    final element =
-        ref.element
-            as $ClassProviderElement<
-              AnyNotifier<AsyncValue<List<Transaction>>, List<Transaction>>,
-              AsyncValue<List<Transaction>>,
-              Object?,
-              Object?
-            >;
+    final element = ref.element as $ClassProviderElement<
+        AnyNotifier<AsyncValue<List<Transaction>>, List<Transaction>>,
+        AsyncValue<List<Transaction>>,
+        Object?,
+        Object?>;
     return element.handleCreate(ref, build);
   }
 }
@@ -213,15 +199,15 @@ final transactionStatsProvider = TransactionStatsNotifierProvider._();
 final class TransactionStatsNotifierProvider
     extends $AsyncNotifierProvider<TransactionStatsNotifier, TransactionStats> {
   TransactionStatsNotifierProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'transactionStatsProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'transactionStatsProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$transactionStatsNotifierHash();
@@ -242,14 +228,11 @@ abstract class _$TransactionStatsNotifier
   WhenComplete runBuild() {
     final ref =
         this.ref as $Ref<AsyncValue<TransactionStats>, TransactionStats>;
-    final element =
-        ref.element
-            as $ClassProviderElement<
-              AnyNotifier<AsyncValue<TransactionStats>, TransactionStats>,
-              AsyncValue<TransactionStats>,
-              Object?,
-              Object?
-            >;
+    final element = ref.element as $ClassProviderElement<
+        AnyNotifier<AsyncValue<TransactionStats>, TransactionStats>,
+        AsyncValue<TransactionStats>,
+        Object?,
+        Object?>;
     return element.handleCreate(ref, build);
   }
 }
@@ -260,15 +243,15 @@ final addTransactionProvider = AddTransactionNotifierProvider._();
 final class AddTransactionNotifierProvider
     extends $NotifierProvider<AddTransactionNotifier, AddTransactionState> {
   AddTransactionNotifierProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'addTransactionProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'addTransactionProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$addTransactionNotifierHash();
@@ -295,14 +278,11 @@ abstract class _$AddTransactionNotifier extends $Notifier<AddTransactionState> {
   @override
   WhenComplete runBuild() {
     final ref = this.ref as $Ref<AddTransactionState, AddTransactionState>;
-    final element =
-        ref.element
-            as $ClassProviderElement<
-              AnyNotifier<AddTransactionState, AddTransactionState>,
-              AddTransactionState,
-              Object?,
-              Object?
-            >;
+    final element = ref.element as $ClassProviderElement<
+        AnyNotifier<AddTransactionState, AddTransactionState>,
+        AddTransactionState,
+        Object?,
+        Object?>;
     return element.handleCreate(ref, build);
   }
 }

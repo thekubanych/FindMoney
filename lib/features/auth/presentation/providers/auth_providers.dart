@@ -86,25 +86,29 @@ class AuthNotifier extends _$AuthNotifier {
 
   Future<void> _restoreSession() async {
     state = state.copyWith(status: AuthStatus.loading);
-    final useCase = ref.read(restoreSessionUseCaseProvider);
-    final hasSession = await useCase.hasSession();
+    try {
+      final useCase = ref.read(restoreSessionUseCaseProvider);
+      final hasSession = await useCase.hasSession();
 
-    if (!hasSession) {
+      if (!hasSession) {
+        state = state.copyWith(status: AuthStatus.unauthenticated);
+        return;
+      }
+
+      final result = await useCase();
+      state = result.fold(
+        (e) => state.copyWith(
+          status: AuthStatus.unauthenticated,
+          error: e.message,
+        ),
+        (user) => state.copyWith(
+          status: AuthStatus.authenticated,
+          user: user,
+        ),
+      );
+    } catch (_) {
       state = state.copyWith(status: AuthStatus.unauthenticated);
-      return;
     }
-
-    final result = await useCase();
-    state = result.fold(
-      (e) => state.copyWith(
-        status: AuthStatus.unauthenticated,
-        error: e.message,
-      ),
-      (user) => state.copyWith(
-        status: AuthStatus.authenticated,
-        user: user,
-      ),
-    );
   }
 
   // ── Login ─────────────────────────────────────────────────────────────────

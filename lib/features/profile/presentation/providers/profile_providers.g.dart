@@ -12,26 +12,23 @@ part of 'profile_providers.dart';
 @ProviderFor(sharedPrefs)
 final sharedPrefsProvider = SharedPrefsProvider._();
 
-final class SharedPrefsProvider
-    extends
-        $FunctionalProvider<
-          AsyncValue<SharedPreferences>,
-          SharedPreferences,
-          FutureOr<SharedPreferences>
-        >
+final class SharedPrefsProvider extends $FunctionalProvider<
+        AsyncValue<SharedPreferences>,
+        SharedPreferences,
+        FutureOr<SharedPreferences>>
     with
         $FutureModifier<SharedPreferences>,
         $FutureProvider<SharedPreferences> {
   SharedPrefsProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'sharedPrefsProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'sharedPrefsProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$sharedPrefsHash();
@@ -39,8 +36,8 @@ final class SharedPrefsProvider
   @$internal
   @override
   $FutureProviderElement<SharedPreferences> $createElement(
-    $ProviderPointer pointer,
-  ) => $FutureProviderElement(pointer);
+          $ProviderPointer pointer) =>
+      $FutureProviderElement(pointer);
 
   @override
   FutureOr<SharedPreferences> create(Ref ref) {
@@ -56,15 +53,15 @@ final hardTruthModeProvider = HardTruthModeNotifierProvider._();
 final class HardTruthModeNotifierProvider
     extends $AsyncNotifierProvider<HardTruthModeNotifier, bool> {
   HardTruthModeNotifierProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'hardTruthModeProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'hardTruthModeProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$hardTruthModeNotifierHash();
@@ -83,14 +80,11 @@ abstract class _$HardTruthModeNotifier extends $AsyncNotifier<bool> {
   @override
   WhenComplete runBuild() {
     final ref = this.ref as $Ref<AsyncValue<bool>, bool>;
-    final element =
-        ref.element
-            as $ClassProviderElement<
-              AnyNotifier<AsyncValue<bool>, bool>,
-              AsyncValue<bool>,
-              Object?,
-              Object?
-            >;
+    final element = ref.element as $ClassProviderElement<
+        AnyNotifier<AsyncValue<bool>, bool>,
+        AsyncValue<bool>,
+        Object?,
+        Object?>;
     return element.handleCreate(ref, build);
   }
 }
@@ -101,15 +95,15 @@ final biometricLockProvider = BiometricLockNotifierProvider._();
 final class BiometricLockNotifierProvider
     extends $AsyncNotifierProvider<BiometricLockNotifier, bool> {
   BiometricLockNotifierProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'biometricLockProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'biometricLockProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$biometricLockNotifierHash();
@@ -128,14 +122,11 @@ abstract class _$BiometricLockNotifier extends $AsyncNotifier<bool> {
   @override
   WhenComplete runBuild() {
     final ref = this.ref as $Ref<AsyncValue<bool>, bool>;
-    final element =
-        ref.element
-            as $ClassProviderElement<
-              AnyNotifier<AsyncValue<bool>, bool>,
-              AsyncValue<bool>,
-              Object?,
-              Object?
-            >;
+    final element = ref.element as $ClassProviderElement<
+        AnyNotifier<AsyncValue<bool>, bool>,
+        AsyncValue<bool>,
+        Object?,
+        Object?>;
     return element.handleCreate(ref, build);
   }
 }
@@ -146,15 +137,15 @@ final notificationsEnabledProvider = NotificationsEnabledNotifierProvider._();
 final class NotificationsEnabledNotifierProvider
     extends $AsyncNotifierProvider<NotificationsEnabledNotifier, bool> {
   NotificationsEnabledNotifierProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'notificationsEnabledProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'notificationsEnabledProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$notificationsEnabledNotifierHash();
@@ -173,14 +164,11 @@ abstract class _$NotificationsEnabledNotifier extends $AsyncNotifier<bool> {
   @override
   WhenComplete runBuild() {
     final ref = this.ref as $Ref<AsyncValue<bool>, bool>;
-    final element =
-        ref.element
-            as $ClassProviderElement<
-              AnyNotifier<AsyncValue<bool>, bool>,
-              AsyncValue<bool>,
-              Object?,
-              Object?
-            >;
+    final element = ref.element as $ClassProviderElement<
+        AnyNotifier<AsyncValue<bool>, bool>,
+        AsyncValue<bool>,
+        Object?,
+        Object?>;
     return element.handleCreate(ref, build);
   }
 }
@@ -191,15 +179,15 @@ final aiPersonalityProvider = AiPersonalityNotifierProvider._();
 final class AiPersonalityNotifierProvider
     extends $AsyncNotifierProvider<AiPersonalityNotifier, AiPersonality> {
   AiPersonalityNotifierProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'aiPersonalityProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'aiPersonalityProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$aiPersonalityNotifierHash();
@@ -218,14 +206,11 @@ abstract class _$AiPersonalityNotifier extends $AsyncNotifier<AiPersonality> {
   @override
   WhenComplete runBuild() {
     final ref = this.ref as $Ref<AsyncValue<AiPersonality>, AiPersonality>;
-    final element =
-        ref.element
-            as $ClassProviderElement<
-              AnyNotifier<AsyncValue<AiPersonality>, AiPersonality>,
-              AsyncValue<AiPersonality>,
-              Object?,
-              Object?
-            >;
+    final element = ref.element as $ClassProviderElement<
+        AnyNotifier<AsyncValue<AiPersonality>, AiPersonality>,
+        AsyncValue<AiPersonality>,
+        Object?,
+        Object?>;
     return element.handleCreate(ref, build);
   }
 }

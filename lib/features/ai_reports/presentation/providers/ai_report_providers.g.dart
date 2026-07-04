@@ -12,24 +12,20 @@ part of 'ai_report_providers.dart';
 @ProviderFor(aiRemoteDataSource)
 final aiRemoteDataSourceProvider = AiRemoteDataSourceProvider._();
 
-final class AiRemoteDataSourceProvider
-    extends
-        $FunctionalProvider<
-          AiRemoteDataSource,
-          AiRemoteDataSource,
-          AiRemoteDataSource
-        >
-    with $Provider<AiRemoteDataSource> {
+final class AiRemoteDataSourceProvider extends $FunctionalProvider<
+    AiRemoteDataSource,
+    AiRemoteDataSource,
+    AiRemoteDataSource> with $Provider<AiRemoteDataSource> {
   AiRemoteDataSourceProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'aiRemoteDataSourceProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'aiRemoteDataSourceProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$aiRemoteDataSourceHash();
@@ -37,8 +33,8 @@ final class AiRemoteDataSourceProvider
   @$internal
   @override
   $ProviderElement<AiRemoteDataSource> $createElement(
-    $ProviderPointer pointer,
-  ) => $ProviderElement(pointer);
+          $ProviderPointer pointer) =>
+      $ProviderElement(pointer);
 
   @override
   AiRemoteDataSource create(Ref ref) {
@@ -60,24 +56,20 @@ String _$aiRemoteDataSourceHash() =>
 @ProviderFor(aiReportRepository)
 final aiReportRepositoryProvider = AiReportRepositoryProvider._();
 
-final class AiReportRepositoryProvider
-    extends
-        $FunctionalProvider<
-          AiReportRepository,
-          AiReportRepository,
-          AiReportRepository
-        >
-    with $Provider<AiReportRepository> {
+final class AiReportRepositoryProvider extends $FunctionalProvider<
+    AiReportRepository,
+    AiReportRepository,
+    AiReportRepository> with $Provider<AiReportRepository> {
   AiReportRepositoryProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'aiReportRepositoryProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'aiReportRepositoryProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$aiReportRepositoryHash();
@@ -85,8 +77,8 @@ final class AiReportRepositoryProvider
   @$internal
   @override
   $ProviderElement<AiReportRepository> $createElement(
-    $ProviderPointer pointer,
-  ) => $ProviderElement(pointer);
+          $ProviderPointer pointer) =>
+      $ProviderElement(pointer);
 
   @override
   AiReportRepository create(Ref ref) {
@@ -108,24 +100,20 @@ String _$aiReportRepositoryHash() =>
 @ProviderFor(getDailyReportUseCase)
 final getDailyReportUseCaseProvider = GetDailyReportUseCaseProvider._();
 
-final class GetDailyReportUseCaseProvider
-    extends
-        $FunctionalProvider<
-          GetDailyReportUseCase,
-          GetDailyReportUseCase,
-          GetDailyReportUseCase
-        >
-    with $Provider<GetDailyReportUseCase> {
+final class GetDailyReportUseCaseProvider extends $FunctionalProvider<
+    GetDailyReportUseCase,
+    GetDailyReportUseCase,
+    GetDailyReportUseCase> with $Provider<GetDailyReportUseCase> {
   GetDailyReportUseCaseProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'getDailyReportUseCaseProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'getDailyReportUseCaseProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$getDailyReportUseCaseHash();
@@ -133,8 +121,8 @@ final class GetDailyReportUseCaseProvider
   @$internal
   @override
   $ProviderElement<GetDailyReportUseCase> $createElement(
-    $ProviderPointer pointer,
-  ) => $ProviderElement(pointer);
+          $ProviderPointer pointer) =>
+      $ProviderElement(pointer);
 
   @override
   GetDailyReportUseCase create(Ref ref) {
@@ -156,24 +144,20 @@ String _$getDailyReportUseCaseHash() =>
 @ProviderFor(analyzeNowUseCase)
 final analyzeNowUseCaseProvider = AnalyzeNowUseCaseProvider._();
 
-final class AnalyzeNowUseCaseProvider
-    extends
-        $FunctionalProvider<
-          AnalyzeNowUseCase,
-          AnalyzeNowUseCase,
-          AnalyzeNowUseCase
-        >
-    with $Provider<AnalyzeNowUseCase> {
+final class AnalyzeNowUseCaseProvider extends $FunctionalProvider<
+    AnalyzeNowUseCase,
+    AnalyzeNowUseCase,
+    AnalyzeNowUseCase> with $Provider<AnalyzeNowUseCase> {
   AnalyzeNowUseCaseProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'analyzeNowUseCaseProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'analyzeNowUseCaseProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$analyzeNowUseCaseHash();
@@ -181,8 +165,8 @@ final class AnalyzeNowUseCaseProvider
   @$internal
   @override
   $ProviderElement<AnalyzeNowUseCase> $createElement(
-    $ProviderPointer pointer,
-  ) => $ProviderElement(pointer);
+          $ProviderPointer pointer) =>
+      $ProviderElement(pointer);
 
   @override
   AnalyzeNowUseCase create(Ref ref) {
@@ -203,24 +187,20 @@ String _$analyzeNowUseCaseHash() => r'812597373bd44dd0dea6e181b74c8bc49169e735';
 @ProviderFor(getBehaviorScoreUseCase)
 final getBehaviorScoreUseCaseProvider = GetBehaviorScoreUseCaseProvider._();
 
-final class GetBehaviorScoreUseCaseProvider
-    extends
-        $FunctionalProvider<
-          GetBehaviorScoreUseCase,
-          GetBehaviorScoreUseCase,
-          GetBehaviorScoreUseCase
-        >
-    with $Provider<GetBehaviorScoreUseCase> {
+final class GetBehaviorScoreUseCaseProvider extends $FunctionalProvider<
+    GetBehaviorScoreUseCase,
+    GetBehaviorScoreUseCase,
+    GetBehaviorScoreUseCase> with $Provider<GetBehaviorScoreUseCase> {
   GetBehaviorScoreUseCaseProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'getBehaviorScoreUseCaseProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'getBehaviorScoreUseCaseProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$getBehaviorScoreUseCaseHash();
@@ -228,8 +208,8 @@ final class GetBehaviorScoreUseCaseProvider
   @$internal
   @override
   $ProviderElement<GetBehaviorScoreUseCase> $createElement(
-    $ProviderPointer pointer,
-  ) => $ProviderElement(pointer);
+          $ProviderPointer pointer) =>
+      $ProviderElement(pointer);
 
   @override
   GetBehaviorScoreUseCase create(Ref ref) {
@@ -251,24 +231,20 @@ String _$getBehaviorScoreUseCaseHash() =>
 @ProviderFor(getPredictionsUseCase)
 final getPredictionsUseCaseProvider = GetPredictionsUseCaseProvider._();
 
-final class GetPredictionsUseCaseProvider
-    extends
-        $FunctionalProvider<
-          GetPredictionsUseCase,
-          GetPredictionsUseCase,
-          GetPredictionsUseCase
-        >
-    with $Provider<GetPredictionsUseCase> {
+final class GetPredictionsUseCaseProvider extends $FunctionalProvider<
+    GetPredictionsUseCase,
+    GetPredictionsUseCase,
+    GetPredictionsUseCase> with $Provider<GetPredictionsUseCase> {
   GetPredictionsUseCaseProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'getPredictionsUseCaseProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'getPredictionsUseCaseProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$getPredictionsUseCaseHash();
@@ -276,8 +252,8 @@ final class GetPredictionsUseCaseProvider
   @$internal
   @override
   $ProviderElement<GetPredictionsUseCase> $createElement(
-    $ProviderPointer pointer,
-  ) => $ProviderElement(pointer);
+          $ProviderPointer pointer) =>
+      $ProviderElement(pointer);
 
   @override
   GetPredictionsUseCase create(Ref ref) {
@@ -299,24 +275,20 @@ String _$getPredictionsUseCaseHash() =>
 @ProviderFor(getReportHistoryUseCase)
 final getReportHistoryUseCaseProvider = GetReportHistoryUseCaseProvider._();
 
-final class GetReportHistoryUseCaseProvider
-    extends
-        $FunctionalProvider<
-          GetReportHistoryUseCase,
-          GetReportHistoryUseCase,
-          GetReportHistoryUseCase
-        >
-    with $Provider<GetReportHistoryUseCase> {
+final class GetReportHistoryUseCaseProvider extends $FunctionalProvider<
+    GetReportHistoryUseCase,
+    GetReportHistoryUseCase,
+    GetReportHistoryUseCase> with $Provider<GetReportHistoryUseCase> {
   GetReportHistoryUseCaseProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'getReportHistoryUseCaseProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'getReportHistoryUseCaseProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$getReportHistoryUseCaseHash();
@@ -324,8 +296,8 @@ final class GetReportHistoryUseCaseProvider
   @$internal
   @override
   $ProviderElement<GetReportHistoryUseCase> $createElement(
-    $ProviderPointer pointer,
-  ) => $ProviderElement(pointer);
+          $ProviderPointer pointer) =>
+      $ProviderElement(pointer);
 
   @override
   GetReportHistoryUseCase create(Ref ref) {
@@ -350,15 +322,15 @@ final dailyReportProvider = DailyReportNotifierProvider._();
 final class DailyReportNotifierProvider
     extends $AsyncNotifierProvider<DailyReportNotifier, AiReport> {
   DailyReportNotifierProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'dailyReportProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'dailyReportProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$dailyReportNotifierHash();
@@ -377,14 +349,11 @@ abstract class _$DailyReportNotifier extends $AsyncNotifier<AiReport> {
   @override
   WhenComplete runBuild() {
     final ref = this.ref as $Ref<AsyncValue<AiReport>, AiReport>;
-    final element =
-        ref.element
-            as $ClassProviderElement<
-              AnyNotifier<AsyncValue<AiReport>, AiReport>,
-              AsyncValue<AiReport>,
-              Object?,
-              Object?
-            >;
+    final element = ref.element as $ClassProviderElement<
+        AnyNotifier<AsyncValue<AiReport>, AiReport>,
+        AsyncValue<AiReport>,
+        Object?,
+        Object?>;
     return element.handleCreate(ref, build);
   }
 }
@@ -395,15 +364,15 @@ final analyzeProvider = AnalyzeNotifierProvider._();
 final class AnalyzeNotifierProvider
     extends $NotifierProvider<AnalyzeNotifier, AsyncValue<AiReport?>> {
   AnalyzeNotifierProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'analyzeProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'analyzeProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$analyzeNotifierHash();
@@ -429,14 +398,11 @@ abstract class _$AnalyzeNotifier extends $Notifier<AsyncValue<AiReport?>> {
   @override
   WhenComplete runBuild() {
     final ref = this.ref as $Ref<AsyncValue<AiReport?>, AsyncValue<AiReport?>>;
-    final element =
-        ref.element
-            as $ClassProviderElement<
-              AnyNotifier<AsyncValue<AiReport?>, AsyncValue<AiReport?>>,
-              AsyncValue<AiReport?>,
-              Object?,
-              Object?
-            >;
+    final element = ref.element as $ClassProviderElement<
+        AnyNotifier<AsyncValue<AiReport?>, AsyncValue<AiReport?>>,
+        AsyncValue<AiReport?>,
+        Object?,
+        Object?>;
     return element.handleCreate(ref, build);
   }
 }
@@ -447,15 +413,15 @@ final behaviorScoreProvider = BehaviorScoreNotifierProvider._();
 final class BehaviorScoreNotifierProvider
     extends $AsyncNotifierProvider<BehaviorScoreNotifier, BehaviorScore> {
   BehaviorScoreNotifierProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'behaviorScoreProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'behaviorScoreProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$behaviorScoreNotifierHash();
@@ -474,14 +440,11 @@ abstract class _$BehaviorScoreNotifier extends $AsyncNotifier<BehaviorScore> {
   @override
   WhenComplete runBuild() {
     final ref = this.ref as $Ref<AsyncValue<BehaviorScore>, BehaviorScore>;
-    final element =
-        ref.element
-            as $ClassProviderElement<
-              AnyNotifier<AsyncValue<BehaviorScore>, BehaviorScore>,
-              AsyncValue<BehaviorScore>,
-              Object?,
-              Object?
-            >;
+    final element = ref.element as $ClassProviderElement<
+        AnyNotifier<AsyncValue<BehaviorScore>, BehaviorScore>,
+        AsyncValue<BehaviorScore>,
+        Object?,
+        Object?>;
     return element.handleCreate(ref, build);
   }
 }
@@ -492,15 +455,15 @@ final predictionsProvider = PredictionsNotifierProvider._();
 final class PredictionsNotifierProvider
     extends $AsyncNotifierProvider<PredictionsNotifier, AiPrediction> {
   PredictionsNotifierProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'predictionsProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'predictionsProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$predictionsNotifierHash();
@@ -519,14 +482,11 @@ abstract class _$PredictionsNotifier extends $AsyncNotifier<AiPrediction> {
   @override
   WhenComplete runBuild() {
     final ref = this.ref as $Ref<AsyncValue<AiPrediction>, AiPrediction>;
-    final element =
-        ref.element
-            as $ClassProviderElement<
-              AnyNotifier<AsyncValue<AiPrediction>, AiPrediction>,
-              AsyncValue<AiPrediction>,
-              Object?,
-              Object?
-            >;
+    final element = ref.element as $ClassProviderElement<
+        AnyNotifier<AsyncValue<AiPrediction>, AiPrediction>,
+        AsyncValue<AiPrediction>,
+        Object?,
+        Object?>;
     return element.handleCreate(ref, build);
   }
 }
@@ -537,15 +497,15 @@ final reportTypeProvider = ReportTypeNotifierProvider._();
 final class ReportTypeNotifierProvider
     extends $NotifierProvider<ReportTypeNotifier, AiReportType> {
   ReportTypeNotifierProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'reportTypeProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'reportTypeProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$reportTypeNotifierHash();
@@ -572,14 +532,11 @@ abstract class _$ReportTypeNotifier extends $Notifier<AiReportType> {
   @override
   WhenComplete runBuild() {
     final ref = this.ref as $Ref<AiReportType, AiReportType>;
-    final element =
-        ref.element
-            as $ClassProviderElement<
-              AnyNotifier<AiReportType, AiReportType>,
-              AiReportType,
-              Object?,
-              Object?
-            >;
+    final element = ref.element as $ClassProviderElement<
+        AnyNotifier<AiReportType, AiReportType>,
+        AiReportType,
+        Object?,
+        Object?>;
     return element.handleCreate(ref, build);
   }
 }
@@ -587,20 +544,19 @@ abstract class _$ReportTypeNotifier extends $Notifier<AiReportType> {
 @ProviderFor(selectedReport)
 final selectedReportProvider = SelectedReportProvider._();
 
-final class SelectedReportProvider
-    extends
-        $FunctionalProvider<AsyncValue<AiReport>, AiReport, FutureOr<AiReport>>
+final class SelectedReportProvider extends $FunctionalProvider<
+        AsyncValue<AiReport>, AiReport, FutureOr<AiReport>>
     with $FutureModifier<AiReport>, $FutureProvider<AiReport> {
   SelectedReportProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'selectedReportProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'selectedReportProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$selectedReportHash();

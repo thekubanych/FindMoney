@@ -12,24 +12,20 @@ part of 'challenges_providers.dart';
 @ProviderFor(challengesDataSource)
 final challengesDataSourceProvider = ChallengesDataSourceProvider._();
 
-final class ChallengesDataSourceProvider
-    extends
-        $FunctionalProvider<
-          ChallengesDataSource,
-          ChallengesDataSource,
-          ChallengesDataSource
-        >
-    with $Provider<ChallengesDataSource> {
+final class ChallengesDataSourceProvider extends $FunctionalProvider<
+    ChallengesDataSource,
+    ChallengesDataSource,
+    ChallengesDataSource> with $Provider<ChallengesDataSource> {
   ChallengesDataSourceProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'challengesDataSourceProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'challengesDataSourceProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$challengesDataSourceHash();
@@ -37,8 +33,8 @@ final class ChallengesDataSourceProvider
   @$internal
   @override
   $ProviderElement<ChallengesDataSource> $createElement(
-    $ProviderPointer pointer,
-  ) => $ProviderElement(pointer);
+          $ProviderPointer pointer) =>
+      $ProviderElement(pointer);
 
   @override
   ChallengesDataSource create(Ref ref) {
@@ -63,15 +59,15 @@ final challengesProvider = ChallengesNotifierProvider._();
 final class ChallengesNotifierProvider
     extends $AsyncNotifierProvider<ChallengesNotifier, UserGameStats> {
   ChallengesNotifierProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'challengesProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'challengesProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$challengesNotifierHash();
@@ -90,14 +86,11 @@ abstract class _$ChallengesNotifier extends $AsyncNotifier<UserGameStats> {
   @override
   WhenComplete runBuild() {
     final ref = this.ref as $Ref<AsyncValue<UserGameStats>, UserGameStats>;
-    final element =
-        ref.element
-            as $ClassProviderElement<
-              AnyNotifier<AsyncValue<UserGameStats>, UserGameStats>,
-              AsyncValue<UserGameStats>,
-              Object?,
-              Object?
-            >;
+    final element = ref.element as $ClassProviderElement<
+        AnyNotifier<AsyncValue<UserGameStats>, UserGameStats>,
+        AsyncValue<UserGameStats>,
+        Object?,
+        Object?>;
     return element.handleCreate(ref, build);
   }
 }

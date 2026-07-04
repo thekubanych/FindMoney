@@ -23,8 +23,7 @@ _AiReportModel _$AiReportModelFromJson(Map<String, dynamic> json) =>
       prediction: json['prediction'] == null
           ? null
           : AiPredictionModel.fromJson(
-              json['prediction'] as Map<String, dynamic>,
-            ),
+              json['prediction'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$AiReportModelToJson(_AiReportModel instance) =>
@@ -79,8 +78,8 @@ _BehaviorScoreModel _$BehaviorScoreModelFromJson(Map<String, dynamic> json) =>
       impulsiveScore: (json['impulsive_score'] as num).toDouble(),
       disciplineScore: (json['discipline_score'] as num).toDouble(),
       riskScore: (json['risk_score'] as num).toDouble(),
-      emotionalDependencyScore: (json['emotional_dependency_score'] as num)
-          .toDouble(),
+      emotionalDependencyScore:
+          (json['emotional_dependency_score'] as num).toDouble(),
       savingsHealthScore: (json['savings_health_score'] as num).toDouble(),
       calculatedAt: json['calculated_at'] as String,
     );
